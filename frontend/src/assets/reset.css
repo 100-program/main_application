@@ -1,0 +1,50 @@
+/* CSSリセット（基本の整形） */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML・BODYのベース設定 */
+html,
+body {
+  height: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #d4e0ed;
+  color: #0f193d;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* リンクのスタイル */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* スクロールバーのカスタマイズ（Chrome系） */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #d4e0ed;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #74a3d3;
+  border-radius: 4px;
+}
+
+/* ボディのレイアウト補助 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* 画像の最大幅制限 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

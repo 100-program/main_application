@@ -1,0 +1,21 @@
+.mypage-container {
+  background-color: #d4e0ed;
+  padding: 2rem;
+}
+
+.mypage-title {
+  color: #0f193d;
+  font-size: 2rem;
+}
+
+.mypage-subtitle {
+  color: #74a3d3;
+  margin-bottom: 1rem;
+}
+
+.history-list li {
+  background-color: #b9ace1;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}

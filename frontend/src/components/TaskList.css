@@ -1,0 +1,65 @@
+.task-section {
+  background-color: #74a3d3;
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: #0f193d;
+}
+
+/* セクションタイトル */
+.task-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* タスクリスト全体 */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 各タスク項目 */
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+/* チェックボックス */
+.task-item input[type="checkbox"] {
+  margin-right: 1rem;
+  width: 20px;
+  height: 20px;
+  accent-color: #74a3d3; /* 青系で統一 */
+}
+
+/* タスク名 */
+.task-item label {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+/* 完了時の演出 */
+.task-item.completed {
+  background-color: #d4e0ed;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* ごほうび表示（任意） */
+.reward-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #0f193d;
+  background-color: #b9ace1;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}

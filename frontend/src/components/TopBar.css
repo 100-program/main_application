@@ -1,0 +1,38 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f193d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 24px;
+}
+
+.app-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.gem-display {
+  font-size: 1.2rem;
+  background-color: #74a3d3;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.topbar-button {
+  background-color: #efa1f3;
+  color: #0f193d;
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin-left: 12px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.topbar-button:hover {
+  background-color: #b9ace1;
+}

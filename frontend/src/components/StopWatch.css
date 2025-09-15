@@ -1,0 +1,78 @@
+.stopwatch-section {
+  background-color: #74a3d3;
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: #0f193d;
+  text-align: center;
+}
+
+/* セクションタイトル */
+.stopwatch-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* タイマー表示 */
+.timer-display {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+/* GEM表示 */
+.gem-earned {
+  font-size: 1rem;
+  background-color: #74a3d3;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+/* ボタン群 */
+.stopwatch-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* 各ボタン */
+.stopwatch-button {
+  background-color: #efa1f3;
+  color: #0f193d;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.stopwatch-button:hover {
+  background-color: #d4e0ed;
+}
+
+/* アニメーション演出（GEM獲得時など） */
+.gem-flash {
+  animation: flash 0.4s ease-in-out;
+}
+
+@keyframes flash {
+  0% {
+    transform: scale(1);
+    background-color: #74a3d3;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #efa1f3;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #74a3d3;
+  }
+}

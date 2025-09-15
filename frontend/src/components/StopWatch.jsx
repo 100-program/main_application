@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { formatTime } from "../utils/formatTime";
+import "./StopWatch.css";
 
 function StopWatch() {
   const [seconds, setSeconds] = useState(0);

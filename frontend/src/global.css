@@ -1,11 +1,11 @@
-/* CSSリセット（基本の整形） */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* HTML・BODYのベース設定 */
+/* Base HTML & Body */
 html,
 body {
   height: 100%;
@@ -16,13 +16,29 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* リンクのスタイル */
+/* Layout Base */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Links */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* スクロールバーのカスタマイズ（Chrome系） */
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Scrollbar (Chrome) */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -32,19 +48,4 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: #74a3d3;
   border-radius: 4px;
-}
-
-/* ボディのレイアウト補助 */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-}
-
-/* 画像の最大幅制限 */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
